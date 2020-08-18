@@ -17,29 +17,29 @@
     var question4 = document.quiz.question4.value;
     var question5 = document.quiz.question5.value;
     var question6 = document.quiz.question6.value;
-    var youReasult = 0;
+    var asresult = 0;
   
   // i used the conditional statements if to tell the computer which answer is correct and then increment by 1 to the resalt var if the answer is correct
-    if (question1 == "Always") {
-      youReasult++;
+    if (question1 === "Always") {
+      asresult++;
   }
-    if (question2 == "I don't think so") {
-      youReasult++;
+    if (question2 === "I don't think so") {
+      asresult++;
   }	
-    if (question3 == "Of course !") {
-      youReasult++;
+    if (question3 === "Of course !") {
+      asresult++;
     }
 
-    if (question4 == "every single night!") {
-      youReasult++;
+    if (question4 === "every single night!") {
+      asresult++;
     }
 
-    if (question5 == "Yes!") {
-      youReasult++;
+    if (question5 === "Yes!") {
+      asresult++;
     }
 
-    if (question6 == "All the time") {
-      youReasult++;
+    if (question6 === "All the time") {
+      asresult++;
     }
     
     // i created a var of message to display based on the score of the user this var contain an array of strings/message to show based on the resault of the user
@@ -48,21 +48,21 @@
     //also created a var of score to give it the a value based on the resault of the user and then use that value to get the message var index  
     var score;
   // i used the  conditional statements if
-    if (youReasult == 0) {
+    if (asresult == 0) {
       score = 2;
     }
   
-    if (youReasult >0 && youReasult <3) {
+    if (asresult >0 && asresult <3) {
       score = 1;
     }
   
-    if (youReasult >= 3) {
+    if (asresult >= 3) {
       score = 0;
     }  
-  
+  //here i used HTML DOM get element by id method to show the after after submit div that will contain the resault 
     document.getElementById("after_submit").style.visibility = "visible";
-  
+  //same thing using HTML DOM get element by id method to show the var array of message which contain the the result message
     document.getElementById("message").innerHTML = messages[score]; 
-    document.getElementById("number_youReasult").innerHTML = "You got " + youReasult + " youReasult.";
+    document.getElementById("number_asresult").innerHTML = "You got " + asresult + " asresult.";
     
     }
