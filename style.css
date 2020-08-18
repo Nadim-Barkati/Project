@@ -1,6 +1,6 @@
 body{
     margin:0 ;
-    background : rgb(87, 86, 86)
+    background : #035A72;
 }
 
 .container{
@@ -9,7 +9,7 @@ body{
 }
 
 header{
-    background : #74035b6e ;
+    background : #74035B ;
 }
 header::after{
     content: '';
@@ -79,3 +79,12 @@ nav a {
       border-radius: 15px;
   }
   
+  .questionstyle{
+      background-color: tomato;
+  }
+
+ 
+
+  .number_youReasult{
+      background-color: red;
+  }

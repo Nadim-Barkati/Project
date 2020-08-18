@@ -12,10 +12,10 @@
 <body>
     <!-- I created a div inside the body for the nav bar nd gave it the class of container -->
     <header>
-        <div class="container">
+        <div class="containerxx">
             <!-- added an internal image from the resources folder gave it a lass of logo -->
             <img src="/resources/softlogo.jpg" alt="softlogo" class="logo">
-            <!-- this is theb nav bar i used an unordered list  -->
+            <!-- this is the nav bar i used an unordered list  -->
             <nav>
                 <ul>
                     <li><a href="#"> Home</a></li>
@@ -25,14 +25,61 @@
             </nav>
         </div>
     </header>
+    <!-- I created 2 h and one p as an introduction to my page -->
     <h1 class="Hmainp">Soft Skills Test !</h1>
     <h2 class="Hmainp">Why soft skills are important?</h2>
     <p class="p1" id="whatever">Most interactions with other people require some level of soft skills.
          At a company you might be negotiating to win a new contract, presenting your new idea to colleagues, networking for a new job, and so on. 
          We use soft skills everyday at work and developing these soft skills will help you win more business and accelerate your career progression.</p>
+<!-- I created a button gave it and id so i can  manipulate with j querry later -->
+         <button class="buttons" id="startbutton">Test Your Skills !</button>
+         <!-- another h1  -->
+         <h1>Please Be Prepared</h1>
+<!-- i used a <form> tag  to create an HTML form for user input and gave it the id and name of quiz to use later with j querry  -->
 
-         <button class="buttons" id="firstbutton">Test Your Skills !</button>
-         <p class="p1" id="whatever2">I'm so blid </p>
+<form id = "quiz" name = "quiz">
+<!-- i created a class for my first input and chosed a radio type gave it the id of multichoice and name of
+question1 and i added a value that i'm gonna use later in my js code  -->
+<p class = "questions">I always apologize when I've done something wrong.</p>
+<input type = "radio" id = "multichoice" name = "question1" value = "Always"> Always<br>
+<input type = "radio" id = "multichoice" name = "question1" value = "Never"> Never<br>
+<!-- i did the same with the rest of the input  -->
+<p class = "questions">If everyone I worked with was more like me, it would be easier to get things done.
+</p>
 
+<input type = "radio" id = "multichoice" name = "question2" value = "True"> True<br>
+<input type = "radio" id = "multichoice" name = "question2" value = "I don't think so"> I don't think so<br>
+
+<p class = "questions">i'm always on time for a meeting</p>
+<input type = "radio" id = "multichoice" name = "question3" value = "Of course !"> Of course !<br>
+<input type = "radio" id = "multichoice" name = "question3" value = "Meh Sometimes"> Meh Sometimes<br>
+
+<p class = "questions">i always go to bed early.</p>
+<input type = "radio" id = "multichoice" name = "question4" value = "every single night!"> every single night!<br>
+<input type = "radio" id = "multichoice" name = "question4" value = "Not really"> Not really<br>
+
+<p class = "questions">i'm a good listener.</p>
+<input type = "radio" id = "multichoice" name = "question5" value = " Yes!"> Yes!<br>
+<input type = "radio" id = "multichoice" name = "question5" value = "Only to music"> Only to music<br>
+
+<p class = "questions">I always think outside the box</p>
+<input type = "radio" id = "multichoice" name = "question6" value = "All the time"> All the time<br>
+<input type = "radio" id = "multichoice" name = "question6" value = "What box ?"> What box ?<br>
+
+<!-- i created another button to submit the input answers gave it the id and type of button and i gave it
+onclick Event that i'm gonna use to execute my js code after the user submit his answers   -->
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+        <!-- I added another div tag and 2p gave them ids and this section is to return the resault after i execute my
+        js code  -->  
+
+          <div id = "after_submit">
+            <p id = "number_youReasult"></p>
+            <p id = "message"></p>
+            
+            </div>
 </body>
 </html>
